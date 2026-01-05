@@ -1,0 +1,61 @@
+{
+  "sections": [
+    {
+      "title": "CLI Essentials",
+      "items": [
+        {
+          "name": "ripgrep (rg)",
+          "url": "https://github.com/BurntSushi/ripgrep",
+          "desc": "Fast text search tool. Great replacement for grep.",
+          "os": ["windows", "mac", "linux"],
+          "tags": ["search", "cli"],
+          "commands": [
+            "rg \"pattern\" .",
+            "rg -n \"TODO\" src/"
+          ]
+        },
+        {
+          "name": "fzf",
+          "url": "https://github.com/junegunn/fzf",
+          "desc": "Fuzzy finder for your terminal. Pairs well with rg.",
+          "os": ["windows", "mac", "linux"],
+          "tags": ["search", "productivity"],
+          "commands": [
+            "rg \"error\" . | fzf",
+            "history | fzf"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Git Helpers",
+      "items": [
+        {
+          "name": "GitHub CLI (gh)",
+          "url": "https://cli.github.com/",
+          "desc": "Work with GitHub from the terminal: PRs, issues, auth, repos.",
+          "os": ["windows", "mac", "linux"],
+          "tags": ["git", "github"],
+          "commands": [
+            "gh auth login",
+            "gh repo view --web",
+            "gh pr create --fill"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "General Links",
+      "items": [
+        {
+          "name": "ExplainShell",
+          "url": "https://explainshell.com/",
+          "desc": "Paste a shell command and see what each part does.",
+          "os": ["general"],
+          "tags": ["learning", "cli"],
+          "commands": []
+        }
+      ]
+    }
+  ]
+}

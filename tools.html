@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tools & Useful Links • v2</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <script defer src="./assets/js/theme.js"></script>
+  <script defer src="./assets/js/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./index.html">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span>Tools & Useful Links <em>v2</em></span>
+      </a>
+
+      <div class="header-actions">
+        <a class="btn btn--ghost" href="./index.html">Home</a>
+        <button class="btn btn--ghost" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span id="themeLabel">Dark</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="toolbar">
+      <div class="toolbar__left">
+        <label class="field">
+          <span class="field__label">Search</span>
+          <input id="searchInput" class="input" type="search" placeholder="Search tools, tags, descriptions…" />
+        </label>
+      </div>
+
+      <div class="toolbar__right">
+        <label class="field">
+          <span class="field__label">OS</span>
+          <select id="osFilter" class="select">
+            <option value="all">All</option>
+            <option value="windows">Windows</option>
+            <option value="mac">Mac</option>
+            <option value="linux">Linux</option>
+            <option value="general">General</option>
+          </select>
+        </label>
+
+        <button id="clearFilters" class="btn btn--ghost" type="button">Clear</button>
+      </div>
+    </section>
+
+    <section class="tags" aria-label="Tag filters">
+      <div class="muted small">Tags:</div>
+      <div id="tagBar" class="tagbar"></div>
+    </section>
+
+    <section class="results">
+      <div class="results__meta">
+        <div id="resultCount" class="muted small">Loading…</div>
+      </div>
+      <div id="cards" class="cards" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span class="muted small">Tip: add one tool per day in <code>data/tools.json</code> for clean 2026 contributions.</span>
+    </div>
+  </footer>
+</body>
+</html>
